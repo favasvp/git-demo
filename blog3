@@ -1,0 +1,50 @@
+When working with Git, you might want to track the changes made to a specific file—who changed it, when, and why. Luckily, Git makes this super easy!
+
+📂 View History of a Specific File
+To see all commits that affected a file:
+
+bash
+Copy
+Edit
+git log <filename>
+✅ Example:
+
+bash
+Copy
+Edit
+git log script.py
+🔍 Want More Detail?
+Here are some handy variations:
+
+Show code changes in each commit:
+
+bash
+Copy
+Edit
+git log -p script.py
+Show a summary of changes (lines added/removed):
+
+bash
+Copy
+Edit
+git log --stat script.py
+Compact view (1 line per commit):
+
+bash
+Copy
+Edit
+git log --oneline script.py
+Limit to the last 5 commits:
+
+bash
+Copy
+Edit
+git log -n 5 script.py
+🔎 Bonus: Who Changed What?
+Use git blame to see who last modified each line:
+
+bash
+Copy
+Edit
+git blame script.py
+💡 
